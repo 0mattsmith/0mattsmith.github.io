@@ -7,21 +7,22 @@ body
 
 .nav
 {
-    height:5%;
+    height:100%;
     width: 100%;
     background-color:black;
     position:fixed;
     z-index:99999;
     color:white;
-    font-size:large;
-    transition: all .1s linear;
+    font-size:x-large;
+    transition: all .4s ease-in-out;
+    overflow:hidden;
 }
 
 .nav ul
 {
     list-style-type: none;    
-    left:25%;
-    right:30%;
+    left:20%;
+    right:23%;
     width:auto;
     position:absolute;
     text-align:center;
@@ -38,25 +39,48 @@ body
 .nav ul li:hover
 {
     cursor:default;
-    color:red;
+    color:rgb(0, 183, 255);
 }
+
+.nav img
+{
+    display:block;
+    margin-top:55%;
+    padding-top:55%;
+    padding-bottom:30%;
+    width: 256px;
+}
+
+#aboutMeIcon:hover
+{
+    content:url('/img/aboutme_hover.png')
+}  
+
+#myPrjxIcon:hover
+{
+    content:url('/img/myprjx_hover.png')
+}
+
+#mySkillsIcon:hover
+{
+    content:url('/img/myskills_hover.png')
+} 
 
 .smallerNav 
 {
-    height:2.8%;
-    font-size:small;
-    border-bottom: 2.5px solid red;
-    transition: all .1s linear;
+    height:5%;
+    font-size:large;
+    transition: all .4s ease-in-out;
 }
 
 .main
 {
     margin: auto;
+    margin-top:2.6%;
     left:10%;
     right:10%;
     width: auto;
     height:7808px;
-
     position:absolute;
     background-color:rgb(36, 36, 36);
 }
@@ -64,21 +88,57 @@ body
 .section1
 {
     height: 2560px;
-    border-bottom: 10px red solid;
 }
 .section2
 {
     height: 2560px;
-    border-bottom: 10px red solid;
 
 }
 .section3
 {
     height: 2560px;
-    border-bottom: 10px red solid;
 }
 
 .activePage 
 {
-    color:Red !important;
+    color:rgb(0, 183, 255)!important;
+}
+
+.goToTop
+{
+
+    position:fixed;
+    bottom:5%;
+    right:-13%;
+    transition: all 2s ease-in-out;
+
+}
+
+.goToTopVisible 
+{
+    right:3%!important;
+    transition: all 2s ease-in-out;
+
+}
+
+.goToTop img
+{
+    width:66px;
+
+}
+
+.goToTop img:hover
+{
+    content:url('/img/totop_hover.png');
+    width:96px;
+    transition: all .05s linear;
+}
+
+.footer
+{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align:center;
 }
