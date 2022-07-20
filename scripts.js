@@ -9,7 +9,7 @@ window.onscroll = function (e)
     
     const _toTopIcon = document.getElementById('goToTopDiv')
 
-    if (scrollVal > 20)
+    if (scrollVal > 19)
     {
         _navBar.classList.add ("smallerNav")
         const _navIcons = document.getElementsByClassName("navIcon")
@@ -26,6 +26,7 @@ window.onscroll = function (e)
             _navBar.classList.remove ("smallerNav")
            
             const _navIcons = document.getElementsByClassName("navIcon")
+
             for (const _icons of _navIcons)
             {
                 _icons.style.display = 'block'
@@ -34,13 +35,15 @@ window.onscroll = function (e)
             }
         }
     }
-    
-    const _aboutMeIcon = document.getElementById ('aboutMeIcon')
-    const _myPrjxIcon = document.getElementById ('myPrjxIcon')
-    const _mySkillsIcon = document.getElementById ('mySkillsIcon')
 
+    if (scrollVal < 21)
+    {
+        _page1.classList.remove ("activePage")
+        _page2.classList.remove ("activePage")
+        _page3.classList.remove ("activePage")
+    }
 
-    if (scrollVal < 2999){
+    if (scrollVal > 20 && scrollVal < 3001){
         console.log ("PAGE1")
 
         _page1.classList.add ("activePage")
@@ -48,7 +51,7 @@ window.onscroll = function (e)
         _page3.classList.remove ("activePage")
     }
 
-    if (scrollVal > 3000 && scrollVal < 5139){
+    if (scrollVal > 3000 && scrollVal < 5141){
         console.log ("PAGE2")
 
         _page2.classList.add ("activePage")
@@ -68,4 +71,19 @@ window.onscroll = function (e)
 function MoveToTop()
 {
     document.documentElement.scrollTop = 0
+}
+
+function MoveToSection1()
+{
+    document.documentElement.scrollTop = 21
+}
+
+function MoveToSection2()
+{
+    document.documentElement.scrollTop = 3001
+}
+
+function MoveToSection3()
+{
+    document.documentElement.scrollTop = 5141
 }

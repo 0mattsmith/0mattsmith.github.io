@@ -16,17 +16,17 @@
     <body>
         <div class="nav" id="navBar">
             <ul>
-                <li id="page1" class="activePage"><img src="/img/aboutme_hover.png" class="navIcon" id="aboutMeIcon"/>About Me</li>
-                <li id="page2" class=""><img src="/img/myprjx.png" class="navIcon" id="myPrjxIcon"/>My Projects</li>
-                <li id="page3" class=""><img src="/img/myskills.png" class="navIcon" id="mySkillsIcon"/>My Skills</li>
+                <li id="page1" onclick="MoveToSection1()" class=""><img src="/img/aboutme.png" class="navIcon" id="aboutMeIcon"/>About Me</li>
+                <li id="page2" onclick="MoveToSection2()" class=""><img src="/img/myprjx.png" class="navIcon" id="myPrjxIcon"/>My Projects</li>
+                <li id="page3" onclick="MoveToSection3()" class=""><img src="/img/myskills.png" class="navIcon" id="mySkillsIcon"/>My Skills</li>
             </ul>
         </div>
         <div class="main">
-            <div class="section1">
+            <div name="section1" class="section1">
             </div>
-            <div class="section2">
+            <div name="section2" class="section2">
             </div>
-            <div class="section3">
+            <div name="section3" class="section3">
             </div>
         </div>
         <div onclick="MoveToTop()" class="goToTop" id="goToTopDiv">
