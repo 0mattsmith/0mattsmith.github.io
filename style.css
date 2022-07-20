@@ -94,8 +94,8 @@ body
 .section2
 {
     height: 2560px;
-
 }
+
 .section3
 {
     height: 2560px;
@@ -108,25 +108,21 @@ body
 
 .goToTop
 {
-
     position:fixed;
     bottom:5%;
     right:-13%;
     transition: all 2s ease-in-out;
-
 }
 
 .goToTopVisible 
 {
     right:3%!important;
     transition: all 2s ease-in-out;
-
 }
 
 .goToTop img
 {
     width:66px;
-
 }
 
 .goToTop img:hover
@@ -155,7 +151,6 @@ body
 .SocialSidebar:hover
 {
     left:-50px;
-
     transition: all .5s ease-in-out;
 }
 
@@ -179,10 +174,16 @@ body
 
 .navSocialIcons ul li img
 {    
-    width:96px;
-    padding:5px;
-    cursor:pointer;
-    z-index:99998;
+    width: 96px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 99998;
+}
+
+.navSocialIcons ul li img:hover
+{
+    transform: translateY(-15px);
+    transition: .25s ease-in-out;
 }
 
 #socialIcons
@@ -190,7 +191,15 @@ body
     width:56px;
     margin-top:20px;
     margin-left:60px;
-    cursor:pointer;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#socialIcons:hover
+{
+    background-color: rgba(255, 255, 255, 0.363);
+    transition: .25s ease-in-out;
+    border-radius: 15px;
 }
 
 .footer
@@ -237,7 +246,7 @@ body
 {
     size: 32px;
     color:white;
-    padding:0px 25px 0px 25px;
+    padding: 0px 25px 0px 25px;
     line-height:30px
 }
 
