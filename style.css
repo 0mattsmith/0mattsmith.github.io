@@ -202,3 +202,52 @@ body
     text-align:center;
     z-index:-999;
 }
+
+.leftPane
+{
+    margin-top:5%;
+    width: 35%;
+    border-right:2px solid rgb(94, 94, 94);
+    height: 1225px;
+}
+
+.leftPane img
+{
+    width:480px;
+    margin-top:6.5%;
+    margin-left:16%
+}
+
+.infobox1 h1
+{
+    font-size:48px;
+    text-align:center;
+    padding-left:25px;
+    color:white;
+}
+
+.infobox1 h2
+{
+    padding-top:25px;
+    padding-left:25px;
+    color:white;
+}
+
+.infobox1 p
+{
+    size: 32px;
+    color:white;
+    padding:0px 25px 0px 25px;
+    line-height:30px
+}
+
+.infobox2
+{
+    display:inline-block;
+    position:absolute;
+    margin-left:36%;
+    margin-top:5%;
+    width: 35%;
+    border-right:2px solid rgb(94, 94, 94);
+    height: 1225px;
+}
