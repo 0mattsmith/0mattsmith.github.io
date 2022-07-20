@@ -3,8 +3,7 @@ window.onscroll = function (e)
     const _page1 = document.getElementById("page1")
     const _page2 = document.getElementById("page2")
     const _page3 = document.getElementById("page3")
-    const _navBar = document.getElementById("navBar");
-
+    const _navBar = document.getElementById("navBar")
     var scrollVal = document.documentElement.scrollTop
     
     const _toTopIcon = document.getElementById('goToTopDiv')
@@ -15,7 +14,7 @@ window.onscroll = function (e)
         const _navIcons = document.getElementsByClassName("navIcon")
         for (const _icons of _navIcons)
         {
-            _icons.style.display = 'none';
+            _icons.style.display = 'none'
             _toTopIcon.classList.add ('goToTopVisible')
         }
     } 
